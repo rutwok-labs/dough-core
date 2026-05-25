@@ -2,21 +2,16 @@
 
 <hr />
 <p align="center">
-    <a href="https://github.com/baked-libs/dough/actions">
-        <img alt="Build Status" src="https://github.com/baked-libs/dough/actions/workflows/maven.yml/badge.svg?event=push" />
-    </a>
+  <a href="https://github.com/rutwok-labs/dough-core/actions/workflows/maven.yml">
+    <img alt="Build Status" src="https://github.com/rutwok-labs/dough-core/actions/workflows/maven.yml/badge.svg">
+  </a>
     <a href="https://javadoc.io/doc/io.github.baked-libs/dough-api">
 	<img alt="javadocs" src="https://javadoc.io/badge2/io.github.baked-libs/dough-api/javadoc.svg" />
     </a>
-    <a href="https://search.maven.org/search?q=baked-libs">
-        <img alt="Maven Central" src="https://img.shields.io/maven-central/v/io.github.baked-libs/dough?color=1074ad&logo=apache-maven" />
-    </a>
-    <a href="https://sonarcloud.io/project/overview?id=baked-libs_dough">
-        <img alt="Code Coverage" src="https://sonarcloud.io/api/project_badges/measure?project=baked-libs_dough&metric=coverage" />
-    </a>
-    <a href="https://sonarcloud.io/project/overview?id=baked-libs_dough">
-        <img alt="Maintainability" src="https://sonarcloud.io/api/project_badges/measure?project=baked-libs_dough&metric=sqale_rating" />
-    </a>
+  <a href="https://jitpack.io/#rutwok-labs/dough-core">
+    <img alt="JitPack" src="https://jitpack.io/v/rutwok-labs/dough-core.svg">
+  </a>
+	
 </p>
 <hr />
 .
