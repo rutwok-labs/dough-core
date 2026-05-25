@@ -18,7 +18,7 @@
 Formerly known as "cs-corelib2", dough is a very powerful library aiming to help the everyday Spigot/Plugin developer.
 It is packed to the brim with useful features and APIs to use and play around with.
 
-Dough may be more commonly known as the backbone of [Slimefun](https://github.com/Slimefun/Slimefun4).
+Dough may be more commonly known as the backbone of [Slimefun](https://github.com/rutwok-labs/Slimefun4Core).
 
 ## :sparkles: Current Update
 
