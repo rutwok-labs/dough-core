@@ -1,0 +1,9 @@
+jdk:
+  - openjdk21
+
+install:
+  - sdk install java 21.0.2-open
+  - sdk use java 21.0.2-open
+  - sdk install maven 3.9.6
+  - sdk use maven 3.9.6
+  - bash -lc 'TAG_VERSION="${VERSION:-v1.3.4}"; MAVEN_VERSION="${TAG_VERSION#v}"; mvn -pl dough-api -am package -Drevision="$MAVEN_VERSION" -DskipTests -Dmaven.test.skip=true --no-transfer-progress -q && mvn install:install-file -DgroupId=com.github.rutwok-labs -DartifactId=dough-core -Dversion="$TAG_VERSION" -Dpackaging=jar -Dfile="dough-api/target/dough-api-$MAVEN_VERSION.jar" -DgeneratePom=true --no-transfer-progress -q'
