@@ -1,9 +1,14 @@
 jdk:
   - openjdk21
 
-install:
+before_install:
   - sdk install java 21.0.2-open
   - sdk use java 21.0.2-open
+
+install:
   - sdk install maven 3.9.6
   - sdk use maven 3.9.6
-  - bash -c 'DOUGH_VERSION="${VERSION:-v1.3.10}"; DOUGH_VERSION="${DOUGH_VERSION#v}"; echo "🔧 Building dough version $DOUGH_VERSION"; mvn clean install -Drevision="$DOUGH_VERSION" -DskipTests --no-transfer-progress -B'
+  - export DOUGH_RELEASE_VERSION="${DOUGH_RELEASE_VERSION:-1.3.12}" && echo "🔧 Building dough version $DOUGH_RELEASE_VERSION" && mvn clean install -Drevision="$DOUGH_RELEASE_VERSION" -DskipTests --no-transfer-progress -B
+
+build:
+  verbosity: detailed
